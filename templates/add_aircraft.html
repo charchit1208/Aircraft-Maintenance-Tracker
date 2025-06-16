@@ -17,26 +17,26 @@
     <!-- Page Content -->
     <div class="container mt-5">
         <h2 class="mb-4 text-primary">Add New Aircraft</h2>
-        <form>
+        <form method="POST" action="/add-aircraft">
             <div class="mb-3">
                 <label for="aircraft_id" class="form-label">Aircraft ID</label>
-                <input type="text" class="form-control" id="aircraft_id" placeholder="e.g. A12345">
+                <input type="text" class="form-control" id="aircraft_id" name="aircraft_id" placeholder="e.g. A12345">
             </div>
             <div class="mb-3">
                 <label for="model" class="form-label">Model</label>
-                <input type="text" class="form-control" id="model" placeholder="e.g. Boeing 737">
+                <input type="text" class="form-control" id="model" name="model" placeholder="e.g. Boeing 737">
             </div>
             <div class="mb-3">
                 <label for="manufacturer" class="form-label">Manufacturer</label>
-                <input type="text" class="form-control" id="manufacturer" placeholder="e.g. Boeing">
+                <input type="text" class="form-control" id="manufacturer" name="manufacturer" placeholder="e.g. Boeing">
             </div>
             <div class="mb-3">
                 <label for="year" class="form-label">Year of Manufacture</label>
-                <input type="number" class="form-control" id="year" placeholder="e.g. 2018">
+                <input type="number" class="form-control" id="year" name="year" placeholder="e.g. 2018">
             </div>
             <div class="mb-3">
                 <label for="status" class="form-label">Status</label>
-                <select class="form-select" id="status">
+                <select class="form-select" id="status" name="status">
                     <option selected disabled>Choose...</option>
                     <option value="Active">Active</option>
                     <option value="Inactive">Inactive</option>
